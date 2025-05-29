@@ -1,3 +1,21 @@
+# Copyright 2025 antillia.com Toshiyuki Arai
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# 2025/05/29
+# CategorizedMask2RGBMaskReverter.py
+
 import os
 import sys
 import numpy as np
@@ -6,7 +24,6 @@ import shutil
 from PIL import Image
 from CategorizerConfig import CategorizerConfig
 import traceback
-
 
 class CategorizedMask2RGBMaskReverter:
 
@@ -63,7 +80,9 @@ class CategorizedMask2RGBMaskReverter:
 if __name__ == "__main__":
   try:
     mask_decategorizer_ini = "./mask_decategorizer.ini"
-    
+    if len(sys.argv) == 2:
+      mask_decategorizer_ini = sys.argv[1]
+
     reverter = CategorizedMask2RGBMaskReverter(mask_decategorizer_ini, verbose=True)
     reverter.revert()
   except:

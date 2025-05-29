@@ -17,6 +17,7 @@
 # RGBMask2CategorizedMaskConverter.py
 
 import os
+import sys
 import cv2
 import shutil
 import glob
@@ -119,6 +120,8 @@ class RGBMask2CategorizedMaskConverter:
 if __name__ == "__main__":
   try:
     mask_categorizer_ini ="./mask_categorizer.ini"
+    if len(sys.argv) == 2:
+      mask_categorizer_ini = sys.argv[1]
 
     converter = RGBMask2CategorizedMaskConverter(mask_categorizer_ini, verbose=True)
     converter.convert()
