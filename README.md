@@ -1,0 +1,1 @@
+# RGBMask-To-CategorizedMask-Conversion-Tool
