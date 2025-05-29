@@ -77,7 +77,7 @@ We used <b>to_categorical</b> of <b>tensorflow.keras.utils</b> as the One-Hot-En
 <br>
 Please run the following command to convert rgb-mask files to categorize-mask files.<br>
 <pre>
->python RGBMask2CategorizedMaskConverter.py 
+>python RGBMask2CategorizedMaskConverter.py ./mask_categorizer.ini
 </pre>
 The converter reads the following <a href="./mask_categorizer.ini">mask_categorizer.ini</a> file, converts RGB_masks PNG files
 in <b>rgb_masks_dir</b> to categorized_masks, and saves the categorized mask to <b>categorized_masks_dir</b> as NumPy NPZ files.
@@ -127,7 +127,7 @@ You can also revert the Categorize mask dataset to the corresponding RGB mask da
 by using our Python script <a href="./CategorizedMask2RGBMaskReverter.py">CategorizedMask2RGBMaskReverter.py</a> 
 Please run the following command to revert a Categorized-MaskDataset to an RGB-MaskDataset.<br>
 <pre>
->python CategorizedMask2RGBMaskReverter.py
+>python CategorizedMask2RGBMaskReverter.py ./mask_decategorizer.ini
 </pre>
 The reverter will reads <a href="./mask_decategorizer.ini">mask_decaterozer.ini</a> configuration file.<br>
 <hr>
