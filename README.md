@@ -14,7 +14,6 @@ For a simple example, we applied this conversion tool to RGBMaskDataset for
 <a href="https://github.com/sarah-antillia/ImageMask-Dataset-PanNuke">ImageMask-Dataset-PanNuke</a>.<br>
 <br>
 <b>PanNuke Dataset Citation</b><br>
-<br>
 The dataset used here has been taken from.<br>
 https://www.kaggle.com/datasets/andrewmvd/cancer-inst-segmentation-and-classification<br>
 <br>
