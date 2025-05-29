@@ -73,8 +73,9 @@ Step 1: Read the RGB mask PNG files and convert them to indexed masks.<br>
 Step 2: Create categorized masks from the indexed masks using One-Hot encoding.<br>
 Step 3: Save the categorized data as compressed NumPy NPZ files.<br>
 <br>
-Our converter RGBMask2CategorizedMaskConverter follows this steps.<br><br>
-
+Our converter RGBMask2CategorizedMaskConverter follows this steps.<br>
+We used <b>to_categorical</b> of <b>tensorflow.keras.utils</b> as the One-Hot-Encoder.<br>
+<br>
 Please run the following command to convert rgb-mask files to categorize-mask files.<br>
 <pre>
 >python RGBMask2CategorizedMaskConverter.py 
@@ -98,20 +99,13 @@ in <b>rgb_masks_dir</b> to categorized_masks, and saves the categorized mask to 
 ;        = { rgb_color_0:index_0, rgb_color_1:index_1,
 ; as shown below ,
 rgb_map  = {(0, 0, 0):0, (  0, 255,   0):1,  (255,   0,   0):2,  (  0,   0, 255):3,  (255, 255,   0):4, (  0, 255, 255):5,}
-
 color_order            = "RGB"
-
 rgb_file_format        = ".png"
-
 indexed_file_format    = ".png"
-
 ;Specify ".npz", which is the numpy compressed data format
 categorized_file_format = ".npz"
-
 rgb_masks_dir         = "./PanNuke/sample_masks"
-
 indexed_masks_dir     = "./PanNuke/sample_indexed_masks"
-
 categorized_masks_dir = "./PanNuke/sample_categorized_masks"
 </pre>
 
@@ -151,30 +145,21 @@ The reverter will reads <a href="./mask_decategorizer.ini">mask_decaterozer.ini<
 ;PanNuke mask colors 
 ;classes = ["Background", "Neoplastic cells", "Inflammatory", "Connective/Soft tissue cells","Dead Cells", "Epithelial"]   
 rgb_map  = {(0, 0, 0):0, (  0, 255,   0):1,  (255,   0,   0):2,  (  0,   0, 255):3,  (255, 255,   0):4, (  0, 255, 255):5,}
-
-
 color_order  = "RGB"
 input_format = ".png"
-
-;numpy compress data format
+;numpy compressed data format
 output_format = ".npz"
-
 ;input_dir
 rgb_masks_dir    = "./PanNuke/sample_masks"
-
 ;output dir
 categorized_masks_dir = "./PanNuke/sample_categorized_masks/"
-
 reverted_masks_dir    = "./PanNuke/sample_masks_reverted/"
 </pre>
 <hr>
 <b>Output: Reverted RGB Masks</b><br>
 <img src="./asset/sample_,masks_reverted.png" width=1024 height="auto"><br>
 
-
-
 <br><h2>References</h2>
-
 <b>1. PanNuke: An Open Pan-Cancer Histology Dataset for Nuclei Instance Segmentation and Classification</b><br>
 Gamper, Jevgenij and Koohbanani, Navid Alemi and Benet, Ksenija and Khuram, Ali and Rajpoot, Nasir<br>
 <a href="https://academictorrents.com/details/99f2c7b57b95500711e33f2ee4d14c9fd7c7366c">
@@ -188,9 +173,7 @@ https://github.com/sarah-antillia/ImageMask-Dataset-PanNuke
 </a>
 <br>
 <br>
-
 <b>3. RGBMask-To-GrayscaleMask-Conversion-Tool</b><br>
 Toshiyuki Arai @antillia.com<br>
-
 <a href="https://github.com/sarah-antillia/RGBMask-To-GrayscaleMask-Conversion-Tool">https://github.com/sarah-antillia/RGBMask-To-GrayscaleMask-Conversion-Tool</a>
 
