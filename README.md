@@ -11,7 +11,7 @@ It is easily customizable by a configuration file <a href="./mask_categorizer.in
 
 <h3>2. PanNuke ImageMaskDataset</h3>
 For a simple example, we applied this conversion tool to RGBMaskDataset for 
-<a href="https://github.com/sarah-antillia/ImageMask-Dataset-PanNuke">ImageMask-Dataset-PanNuke</a>.<br
+<a href="https://github.com/sarah-antillia/ImageMask-Dataset-PanNuke">ImageMask-Dataset-PanNuke</a>.<br>
 <br>
 <b>PanNuke Dataset Citation</b><br>
 <br>
