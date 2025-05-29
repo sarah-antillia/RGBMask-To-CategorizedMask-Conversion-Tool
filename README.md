@@ -117,7 +117,7 @@ categorized_masks_dir = "./PanNuke/sample_categorized_masks"
 
 <hr>
 <br>
-For simplicity and demonstration purposes, we used a small sample segmentation dataset from the PanNuke Dataset.s<br>
+For simplicity and demonstration purposes, we used a small sample segmentation dataset from the PanNuke Dataset.<br>
 
 <b> PanNuke RGB Images</b>.<br>
 <img src="./asset/sample_images.png" width=1024 height="auto"><br>
@@ -132,7 +132,7 @@ For simplicity and demonstration purposes, we used a small sample segmentation d
 <h3>4. Revert CategorizedMaskDataset to RGBMaskDataset </h3>
 You can also revert the Categorize mask dataset to the corresponding RGB mask dataset 
 by using our Python script <a href="./CategorizedMask2RGBMaskReverter.py">CategorizedMask2RGBMaskReverter.py</a> 
-Please run the following command to revert a Categorized-MaskDataset to a RGB-MaskDataset.<br>
+Please run the following command to revert a Categorized-MaskDataset to an RGB-MaskDataset.<br>
 <pre>
 >python CategorizedMask2RGBMaskReverter.py
 </pre>
