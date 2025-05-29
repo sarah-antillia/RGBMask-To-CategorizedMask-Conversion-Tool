@@ -7,13 +7,6 @@ for a Multi classes Image Segmentation .<br>
 The <a href="./RGBMask2CategorizedMaskConverter.py">RGBMask2CategorizedMaskConverter.py</a> is a simple offline Python script
 that converts an RGB-MaskDataset to a Categorized-MaskDataset. <br>
 It is easily customizable by a configuration file <a href="./mask_categorizer.ini">mask_categorizer.ini</a><br>
-<!--
-
-In the <a href="./RGB2GrayscaleMaskConverter.py">RGB2GrayscaleMaskConverter.py</a>, 
-Your can convert a RGBMask-Dataset a CategorizedMask-Datatset for Multi-classes Image Segemtation dataset
-by using this conversion tool.<br>
- .<br>
- -->
 <br>
 
 <h3>2. PanNuke ImageMaskDataset</h3>
