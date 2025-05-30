@@ -132,7 +132,8 @@ Please run the following command to revert a Categorized-MaskDataset to an RGB-M
 <pre>
 >python CategorizedMask2RGBMaskReverter.py ./mask_decategorizer.ini
 </pre>
-The reverter will reads <a href="./mask_decategorizer.ini">mask_decaterozer.ini</a> configuration file.<br>
+The reverter reads configuration information defined in <a href="./mask_decategorizer.ini">mask_decaterozer.ini</a>, revert the NPZ categorized masks in <b>categorized_masks_dir</b> to RGB masks , and saves the reverted RGB masks to
+<b>reverted_masks_dir</b>. <br>
 <hr>
 <pre>
 ; 2025/05/29 (C) antillia.com
